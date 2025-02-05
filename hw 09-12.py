@@ -15,6 +15,8 @@ class SmartPhone(Camera,Phone):
         self.brand=brand
         self.android_version=android_version
     def displaydeviceinfo(self):
+        self.take_photo()
+        self.make_call()
         print(f"Brand:{self.brand}\nAndroid's Version:{self.android_version}\nResolution:{self.resolution}\nPhone Number:{self.phone_number}")
 sp=SmartPhone("IQOO Z9X","14",55,9382835213)
 sp.displaydeviceinfo()
